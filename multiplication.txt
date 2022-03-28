@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+
+
+public class MultiplicationTable {
+
+    int a;
+
+    Scanner sc;
+
+    int result;
+
+    void takeInput()
+
+    {
+
+        sc = new Scanner(System.in);
+
+        System.out.println("Please select table no.");
+
+        a = sc.nextInt();
+
+    }
+
+
+
+    void generateTable()
+
+    {
+
+        if (a>0)
+
+        {
+
+            for(int i = 1; i<=10;i++)
+
+            {
+
+                result = a * i;
+
+                System.out.println(i +" x "+a +" = " +result);
+
+            }
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        MultiplicationTable var = new MultiplicationTable();
+
+        var.takeInput();
+
+        var.generateTable();
+
+    }
+
+}
